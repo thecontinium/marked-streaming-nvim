@@ -1,10 +1,11 @@
-
-" The VimL/VimScript code is included in this sample plugin to demonstrate the
-" two different approaches but it is not required you use VimL. Feel free to
-" delete this code and proceed without it.
-
-echo "Starting the example Python Plugin"
-
-function DoItVimL()
-    echo "hello from DoItVimL"
-endfunction
+" if !exists('g:loaded_remote_plugins')
+"       runtime! plugin/rplugin.vim
+" endif
+" echo IsMarkedInstalled()
+" 
+" if IsMarkedInstalled()
+"       autocmd FileType markdown
+"      \ nmap <buffer><Leader>R call OpenMarkedStreamingPreview() | autocmd InsertLeave,CursorHold <buffer> call StreamBufferToMarked()
+"       "	\ autocmd CursorHold,BufWrite,InsetLeave <buffer> exec StreamToMarked()
+"       " \ autocmd CursorHold,CursorHoldI,CursorMoved,CursorMovedI <buffer> exec StreamToMarked()
+" endif
