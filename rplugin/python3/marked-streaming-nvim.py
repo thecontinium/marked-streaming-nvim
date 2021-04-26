@@ -28,5 +28,7 @@ class Marked(object):
     @neovim.autocmd('FileType', pattern='markdown', eval='expand("<afile>")', sync=True)
     def autocmd_handler(self, filename):
         if self.installed:
-            self.vim.command('nmap <buffer><Leader>O :silent !open x-marked://stream/<CR>')
-            self.vim.command('autocmd InsertLeave,CursorHold <buffer> :call StreamBufferToMarked()')
+            open = self.vim.eval("get(g:,'marked_streaming_open_mapping','<Leader>O')")
+            events = self.vim.eval("get(g:,'marked_streaming_events','InsertLeave,CursorHold')")
+            self.vim.command(f"nmap <buffer>{open} :silent !open x-marked://stream/<CR>")
+            self.vim.command(f"autocmd {events} <buffer> :call StreamBufferToMarked()")
