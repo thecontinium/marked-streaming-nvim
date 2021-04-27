@@ -5,7 +5,6 @@ The call to stream the buffer including the extractiion of the text in the buffe
 
 This is dependent on the python library PyObjC being installed in the same environment as pynvim.
 
-.
 
 
 ``` bash
