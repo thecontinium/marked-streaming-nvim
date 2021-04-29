@@ -1,19 +1,18 @@
-*nvim-example-python-plugin.txt* A template of a remote Python plugin.
+*marked-streaming-nvim.txt* Remote python plugin 
 
-                  Example Remote Python Plugin
+                  Streaming markdown from Vim to Marked
 
 ==============================================================================
 
 CONTENTS                                 *nvim-example-python-plugin-contents*
 
-    1. Introduction .................... |nvim-example-python-plugin-intro|
+    1. Introduction .................... |marked-streaming-nvim-intro|
 
 
-Original Author:    Jacob Simpson
+Original Author:    Who ever    
 License:            The Unlicense
 
-INTRODUCTION                                *nvim-example-python-plugin-intro*
+INTRODUCTION                                *marked-streaming-nvim-intro*
 
-A very simple example of a Python plugin in the new remote plugin style used by
-Neovim.
+A very simple Python plugin to stream a buffer to marked.
 
