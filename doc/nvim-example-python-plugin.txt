@@ -4,7 +4,7 @@
 
 ==============================================================================
 
-CONTENTS                                 *nvim-example-python-plugin-contents*
+CONTENTS                                 *marked-streaming-nvim-contents*
 
     1. Introduction .................... |marked-streaming-nvim-intro|
 
