@@ -1,4 +1,4 @@
-# Streaming markdown from Vim to Marked
+# Streaming markdown from NeoVim to Marked
 
 This implements [marked streaming preview](https://marked2app.com/help/Streaming_Preview.html) for markdown file types in neovim.
 The call to stream the buffer including the extraction of the text in the buffer and streaming to marked is asynchronous.
