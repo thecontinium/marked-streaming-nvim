@@ -27,4 +27,4 @@ class Marked(object):
             open = self.vim.eval("get(g:,'marked_streaming_open_mapping','<Leader>O')")
             events = self.vim.eval("get(g:,'marked_streaming_events','InsertLeave,CursorHold')")
             callback = self.vim.eval("get(g:,'marked_streaming_callback','?x-success=io.alacritty')")
-            self.vim.command(f"nmap <buffer>{open} :autocmd {events},BufEnter <buffer> :call _marked_stream_buffer()<CR>:silent !open x-marked://stream/{callback}<CR>:call _marked_stream_buffer()<CR>")
+            self.vim.command(f"nmap <buffer>{open} :autocmd {events},BufEnter <buffer> :call _marked_stream_buffer()<CR>:silent !open 'x-marked://stream/{callback}'<CR>:call _marked_stream_buffer()<CR>")
